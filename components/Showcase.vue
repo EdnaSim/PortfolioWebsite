@@ -4,10 +4,10 @@
       <template #header>
         <!--To put custom stuff in header, nest <template #header> in the Showcase attribute-->
         <slot name="header">
-          <p :class="ui?.title ?? 'font-bold text-6xl'">{{ title }}</p>
+          <p :class="ui?.title ?? 'font-bold text-6xl text-mainpink'">{{ title }}</p>
         </slot>
         <slot name="subtitle">
-          <p :class="ui?.subtitle ?? 'text-lg mt-2'">{{ subtitle }}</p>
+          <p :class="ui?.subtitle ?? 'text-lg mt-2 text-purple-500 dark:text-purple-400'">{{ subtitle }}</p>
         </slot>
       </template>
 

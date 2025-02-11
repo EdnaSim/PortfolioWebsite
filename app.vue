@@ -32,9 +32,10 @@ function IsTheActiveTab(label:string){
     <title>Edna Sim's Portfolio</title>
   </head>
   <div class="mb-[10rem]">
-    <div>
-      <UHorizontalNavigation :links="nav" 
-      class="border-b border-purple-300 ">
+    <div class="w-full flex"></div> <!--Prevent gap at the top-->
+    <div class="sticky top-0">
+      <UHorizontalNavigation :links="nav" :ui="{wrapper:'bg-mainteal/30', before:'hover:before:bg-mainteal/30 before:inset-y-2'}"
+      class="border-b border-secondary">
         <template #default="{link}">
           <!--If is the active tab, change colour and do an underline-->
             <span class='group-hover:text-primary relative' :class="IsTheActiveTab(link.label) ? 'border-b border-primary text-black dark:text-white' : ''">

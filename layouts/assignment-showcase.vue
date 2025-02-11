@@ -44,7 +44,7 @@
                         <h2><b>Frontend</b></h2>
                         I developed a great majority of the frontend (display, functionality, server API calls and handling).
                         Developed using Nuxtjs (Vue) <i>Just like this website</i>
-                        <UAccordion :items="fypFrontendAccordion" class="mt-2">
+                        <UAccordion :items="fypFrontendAccordion" class="mt-2" variant="soft">
                             <template #login>
                                 <div class="accordionContainer">
                                     In both login pages, the user will be rejected with a notice if they are suspended.
