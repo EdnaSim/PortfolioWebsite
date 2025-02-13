@@ -28,7 +28,14 @@
         <p class="font-bold text-lg">Education & Qualifications</p>
         
         <EducationTextBox title="Diploma in Game Development and Technology" subtitle="Nanyang Polytechnic, 2022-2025"
-        link="https://www.nyp.edu.sg/student/study/schools/design-media/diploma-game-development-technology"/>
+        link="https://www.nyp.edu.sg/student/study/schools/design-media/diploma-game-development-technology">
+          <template #extra>
+            <ul class="list-disc">
+              <li>Director's list for Yr 2 (Sem 1 & 2) and Yr 3 Sem 1</li>
+              <li>Awaiting graduation...</li>
+            </ul>
+          </template>
+        </EducationTextBox>
         <EducationTextBox title="Unity Certified Associate: Programmer" subtitle="Unity Technologies, 2024"
         link="https://www.credly.com/badges/61115873-6e9a-4226-9ae0-e368881f7498/public_url"/>
         <EducationTextBox title="Google Project Management Certificate (v1)" subtitle="Coursera, 2023"

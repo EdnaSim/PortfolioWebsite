@@ -262,13 +262,17 @@
 
         <div ref="fryharderref">
              <Showcase :title="fryharders" subtitle="Group assignment - Game Console Development (Yr 3)">
+                <template #body>
 
+                </template>
              </Showcase>
         </div>
 
         <div ref="mgpref">
             <Showcase :title="mgp" subtitle="Solo assignment - Mobile Game Programming (Yr 2)">
-
+                <template #body>
+                    
+                </template>
             </Showcase>
         </div>
     </div>
@@ -289,6 +293,8 @@ const mgp = "Park Runner";
 
 const cmtsenseiRef = useTemplateRef("cmtsenseiref");
 const iwpRef = useTemplateRef("iwpref");
+const fryharderRef = useTemplateRef('fryharderref');
+const mgpRef = useTemplateRef('mgpref');
 
 const navLinks = [{
     label: cmtsensei,
@@ -296,6 +302,12 @@ const navLinks = [{
 },{
     label:iwp,
     click:()=>ScrollTo(iwpRef.value)
+},{
+    label:fryharders,
+    click:()=>ScrollTo(fryharderRef.value)
+},{
+   label:mgp,
+   click:()=>ScrollTo(mgpRef.value), 
 }];
 
 const fypFrontendAccordion = [{

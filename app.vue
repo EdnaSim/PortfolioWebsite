@@ -79,8 +79,6 @@ function ScrollToTop(){
       <br><br>
       Email <br>
       <UButton to="mailto:ednasim123@gmail.com" target="_blank" variant="link">ednasim123@gmail.com</UButton>
-      <br><br>
-      Want to send a quick message? Click <UButton @click="modal.open(SendMessageModal)">here</UButton>
     </div>
 
     <!--Back to top btn-->
