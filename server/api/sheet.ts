@@ -9,22 +9,26 @@ export default defineEventHandler(async (event: any) =>{
     }
     const body = await readBody(event);
     const res = await WriteToSheet(body.name ?? '', body.contact ?? '', body.message);
-    return res;
+    return res ?? {statusText:'NOT OK'};
 });
 
 async function WriteToSheet(name:string, contact:string, message:string){
-    const client = await GetGoogleSheetClient();
-    const res = await client.spreadsheets.values.append({
-        spreadsheetId: spreadsheetId,
-        range: 'A1:D1',
-        valueInputOption: 'USER_ENTERED',
-        insertDataOption: 'INSERT_ROWS',
-        requestBody: {
-            "majorDimension": "ROWS",
-            values:[[name, contact, message, new Date().toLocaleString("en-GB", { timeZone: "Asia/Singapore" })]]
-        },
-    });
-    return res;
+    try{
+        const client = await GetGoogleSheetClient();
+        const res = await client.spreadsheets.values.append({
+            spreadsheetId: spreadsheetId,
+            range: 'A1:D1',
+            valueInputOption: 'USER_ENTERED',
+            insertDataOption: 'INSERT_ROWS',
+            requestBody: {
+                "majorDimension": "ROWS",
+                values:[[name, contact, message, new Date().toLocaleString("en-GB", { timeZone: "Asia/Singapore" })]]
+            },
+        });
+        return res;
+    } catch(e){
+        return null;
+    }
 } 
 
 async function GetGoogleSheetClient(){
