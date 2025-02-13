@@ -259,6 +259,18 @@
                 </template>
             </Showcase>
         </div>
+
+        <div ref="fryharderref">
+             <Showcase :title="fryharders" subtitle="Group assignment - Game Console Development (Yr 3)">
+
+             </Showcase>
+        </div>
+
+        <div ref="mgpref">
+            <Showcase :title="mgp" subtitle="Solo assignment - Mobile Game Programming (Yr 2)">
+
+            </Showcase>
+        </div>
     </div>
 </template>
 
@@ -272,6 +284,8 @@ const props = defineProps<{
 
 const cmtsensei = "CMT Sensei";
 const iwp = "Spherium Sentinels";
+const fryharders="FryHarders";
+const mgp = "Park Runner";
 
 const cmtsenseiRef = useTemplateRef("cmtsenseiref");
 const iwpRef = useTemplateRef("iwpref");

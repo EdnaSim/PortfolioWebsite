@@ -13,5 +13,14 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
-  ]
+  ],
+  runtimeConfig:{
+    secret:{
+      sheetId: '',
+      credentials: '',
+    },
+    public:{
+
+    },
+  }
 })

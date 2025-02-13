@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import SendMessageModal from './components/SendMessageModal.vue';
 import ToggleLightMode from './components/ToggleLightMode.vue';
-import { WaitUntil } from './miscScripts/WaitUntil';
 
+const modal = useModal();
 //Layout names
 const ABOUTME_LAYOUT = "introduction";
 const SHOWCASE_LAYOUT = "assignment-showcase";
@@ -24,9 +25,6 @@ const nav = ref([{
 onMounted(async()=>{
   //If user scrolls down further than window height, show a btn to go back to top
   window.addEventListener('scroll', ()=>CheckScrollState());
-
-  // await WaitUntil(()=>navRef.value != null);
-  // console.log("adsasd",navRef.value?.$el.clientHeight);
 });
 
 onUnmounted(()=>window.removeEventListener('scroll', ()=>CheckScrollState()));
@@ -52,7 +50,7 @@ function ScrollToTop(){
   <head>
     <title>Edna Sim's Portfolio</title>
   </head>
-  <div class="mb-[10rem]" ref="container">
+  <div class="md:mb-[5rem]" ref="container">
     <div class="w-full flex"></div> <!--Prevent gap at the top-->
     <div class="sticky top-0">
       <div ref="navref">
@@ -72,8 +70,23 @@ function ScrollToTop(){
 
     <NuxtLayout :name="layoutName" :offsetY="navRef?.clientHeight"/>
 
+    <hr class="mt-10 mb-4">
+
+    <!--Footer: Contact-->
+    <div class="w-full text-center p-3">
+      LinkedIn<br>
+      <UButton to="http://www.linkedin.com/in/edna-sim-siew-yee-020901277" target="_blank" variant="link">http://www.linkedin.com/in/edna-sim-siew-yee-020901277</UButton>
+      <br><br>
+      Email <br>
+      <UButton to="mailto:ednasim123@gmail.com" target="_blank" variant="link">ednasim123@gmail.com</UButton>
+      <br><br>
+      Want to send a quick message? Click <UButton @click="modal.open(SendMessageModal)">here</UButton>
+    </div>
+
     <!--Back to top btn-->
     <UButton icon="i-heroicons-arrow-up" variant="soft" color="teal" v-if="showScrollUp" @click="ScrollToTop()"
     class="right-2 bottom-2 fixed"/>
   </div>
+  <UModals/>
+  <UNotifications/>
 </template>
