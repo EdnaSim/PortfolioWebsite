@@ -80,6 +80,7 @@ function ScrollToTop(){
       Email <br>
       <UButton to="mailto:ednasim123@gmail.com" target="_blank" variant="link">ednasim123@gmail.com</UButton>
       <br><br>
+      <!--TODO: Doesnt work on github. error 405, cant call fetch to api/sheets :(-->
       Want to send a quick message? Click <UButton @click="modal.open(SendMessageModal)">here</UButton>
     </div>
 

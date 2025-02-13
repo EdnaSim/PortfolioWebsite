@@ -39,6 +39,7 @@ const isLoading = ref(false);
 
 async function OnSubmit(){
   isLoading.value = true;
+  //Not working on github pages
   const res :any = await $fetch('api/sheet', {
     method:"POST",
     body: {
