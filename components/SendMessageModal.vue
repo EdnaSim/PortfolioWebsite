@@ -39,10 +39,7 @@ const isLoading = ref(false);
 
 async function OnSubmit(){
   isLoading.value = true;
-  let url = useRuntimeConfig().public.githubUrl;
-  if (url == '') url='api/sheet';
-  console.log(url);
-  const res :any = await $fetch(url, {
+  const res :any = await $fetch('api/sheet', {
     method:"POST",
     body: {
       name: formState.name,
