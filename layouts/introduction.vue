@@ -46,7 +46,7 @@
       <!--Skills/Experience-->
       <div class="px-4">
         <p class="font-bold text-lg">Skills</p>
-        <p>Unity C#, C++, Java/Android studio, HTML & CSS (Including Vue, Nuxt, Tailwind), Github & PlasticSCM</p>
+        <p>Unity C#, C++, Java/Android studio, HTML & CSS (Including Vue, Nuxt, Tailwind), version control (Eg. Github)</p>
 
         <div class="h-10"/> <!--Space between the 2 topics-->
 

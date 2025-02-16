@@ -263,7 +263,53 @@
         <div ref="fryharderref">
              <Showcase :title="fryharders" subtitle="Group assignment - Game Console Development (Yr 3)">
                 <template #body>
-
+                    <div class="mb-10">
+                        <iframe class="m-auto" width="560" height="315" src="https://www.youtube.com/embed/0eb0spiTysE?si=YDvWF8lIi1bA0lWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <b>Game overview</b><br>
+                        Developed in C++ for the PS4 (using devkit), in a group of 3.
+                        <br><br>
+                        <b>My contributions</b><br>
+                        <ul class="list-disc">
+                            <li>
+                                Player movement
+                                <ul>
+                                    <li>Controls</li>
+                                    <li>Model rotating in the movement's direction</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Player interaction with objects
+                                <ul>
+                                    <li>Collision</li>
+                                    <li>Calculating the direction that the player is facing to find objects</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Cooking
+                                <ul>
+                                    <li>Controller features (Vibrate and motion sensor/accelerometer for some utensils, light bar colour change)</li>
+                                    <li>Cooking process (What actions to complete, cooking progress, evaluating cooking result)</li>
+                                    <li>Recipes (what ingredients and utensils are required for a food item)</li>
+                                    <li>UI (Progress bar and instruction text)​</li>
+                                    <li>Implementing SFX</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Map generation
+                                <ul>
+                                    <li>Coloured the counter models through their collada files</li>
+                                    <li>Shelf game object (Where utensils and ingredients are collected from) and icons rendered for each respective item</li>
+                                    <li>Randomized locations for cooking counters and shelves (Map shape is fixed)</li>
+                                </ul>
+                            </li>
+                            <li>Packaging (Eg. TitleID)</li>
+                            <li>Some art</li>
+                            <li>Implementing SFX for new orders, submitting orders, and failing orders</li>
+                            <li>Order UI (What items to deliver): Displayed the time left for each order</li>
+                        </ul>
+                    </div>
                 </template>
              </Showcase>
         </div>
@@ -271,7 +317,52 @@
         <div ref="mgpref">
             <Showcase :title="mgp" subtitle="Solo assignment - Mobile Game Programming (Yr 2)">
                 <template #body>
-                    
+                    <div class="mb-10">
+                        <iframe class="m-auto" width="560" height="315" src="https://www.youtube.com/embed/zLzynxyjpzo" title="MGP Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <b>Overview</b><br>
+                        Developed in Android Studio (Java).<br>
+                        A game about running through the park to pick up trash and correctly depositing them into their respective trash bins.
+                        Made with the intention of educating younger players on recycling and other environmentally-friendly actions.
+                        <br><br>
+                        <b>Features</b><br>
+                        <ul class="list-disc">
+                            <li>Swipe up to jump. Swipe sideways to change lanes.</li>
+                            <li>Accelerometer (Tilt phone to control movement, able to both jump and change lanes).</li>
+                            <li>Settings: Enabled accelerometer / Enable/disable vibrations.</li>
+                            <li>Sharing game results to Facebook.</li>
+                            <li>Locally-saved leaderboard.</li>
+                            <li>Colliding with bicycles results in a game over (and makes the phone vibrate briefly).</li>
+                            <li>Speed increases over-time, with a limit.</li>
+                            <li>
+                                Recycling Minigame
+                                <ul>
+                                    <li>Made with the intention of educating players about common trash items and what bins they should be thrown into. </li>
+                                    <li>Collide with trash, to pick it up and store it in the inventory.</li>
+                                    <li>Bins spawn with a random waste type (General waste, plastic, metal, paper).</li>
+                                    <li>When colliding with a bin, the minigame is triggered. The player has to drag as many correct types of trash into the bin as possible within the time limit.</li>
+                                    <li>They earn points for each correct item deposited and lose points for each incorrect item.​</li>
+                                    <li>Points are tallied at the end of the minigame, with a screen showing what they correctly/incorrectly deposited. This is to allow the player to learn from their mistakes.​</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Air-con Minigame
+                                <ul>
+                                    <li>The intention is to suggest to the player to set their air-conditioners to 25C, helping to save energy​.</li>
+                                    <li>After a brief intermission period, the pointer will begin to move.</li>
+                                    <li>Player gains points if they tap the screen when the pointer is over the 25C region.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Shop
+                                <ul>
+                                    <li>Earn coins from playing the game.</li>
+                                    <li>Spend coins on upgrades.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </template>
             </Showcase>
         </div>
@@ -310,6 +401,7 @@ const navLinks = [{
    click:()=>ScrollTo(mgpRef.value), 
 }];
 
+//Accordion tabs for the FYP showcase
 const fypFrontendAccordion = [{
     label: "Login",
     slot:"login",
