@@ -11,12 +11,13 @@
     <div class="p-5">
       <p class="font-bold mb-2">About me</p>
       <p class="w-[50%]">
-        I'm a Singaporean studying game development. I started this journey because of games like League of Legends and Roblox,
-        and now I have 3+ years of experience developing using a variety of tools, with my favourite being unity.
+        Hi, I'm a Singaporean studying game development. I started this journey because of games like League of Legends and Roblox,
+        as they inspired me to want to make my own games. I really like the concept of unique playable characters with diverse kits, and I hope
+        to make my own LoL (but PvE) one day.
         <br><br>
-        My main interest is in gameplay programming. 
+        My main interest is gameplay programming. <br>
         What I enjoy most about game development is not necessarily in seeing the final product but the journey to it; 
-        figuring out how to structure and develop a codebase for a game is interesting, while
+        figuring out how to structure and develop a codebase for a game is a fun puzzle, while
         learning and using new coding techniques and syntax is exciting.
       </p>
     </div>
