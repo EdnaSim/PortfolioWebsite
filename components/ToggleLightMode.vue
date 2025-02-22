@@ -1,6 +1,6 @@
 <template>
 <div>
-    <UButton icon="i-heroicons-sun" @click="isDark = !isDark"/>
+    <UButton icon="i-heroicons-sun" @click="isDark = !isDark" class="rounded-tr-none"/>
 </div>
 </template>
 

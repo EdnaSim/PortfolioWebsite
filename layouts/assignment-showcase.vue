@@ -1,11 +1,19 @@
 <template>
-    <UVerticalNavigation :links="navLinks" class="fixed left-0 mt-4"/>
-    <div class="w-[60%] m-auto space-y-5" >
+    <UAccordion :items="[{label:'Showcases',defaultOpen:true, slot:'nav'}]" 
+    class="fixed left-0 w-[150px]" 
+    :ui="{item:{base:'dark:bg-purple-500 accordion'}, default:{variant:'solid'}}" >
+        <template #nav>
+            <UVerticalNavigation :links="navLinks" 
+            :ui="{inactive:'text-black dark:text-black hover:before:bg-primary/30'}"/>
+        </template>
+    </UAccordion>
+
+    <div class="w-[60%] max-md:w-full m-auto space-y-5" >
         <div ref="cmtsenseiref">
             <Showcase :title="cmtsensei" subtitle="Group project - Final Year Project (Yr 3)">
             <template #body>
-                <video class="m-auto pb-10" width="560" height="315" controls><source src="../public/videos/fyp_trailer.mp4" type="video/mp4"></video>
-                <div class="flex gap-5">
+                <video class="m-auto pb-10 max-w-full" width="560" height="315" controls><source src="../public/videos/fyp_trailer.mp4" type="video/mp4"></video>
+                <div class="flex gap-5 max-md:flex-col">
                     <!--Overview-->
                     <div class="flex-1">
                         <p>CMT Sensei is a web-based AI tutor with management tools for lecturers. It is aimed at NYP's Creative Media and Technology (CMT) modules</p>
@@ -27,7 +35,7 @@
                         </ul>
                     </div>
                     <!--Personal contributions-->
-                    <div class="flex-1">
+                    <div class="flex-1 max-md:mt-4">
                         <div> <!--Docker-->
                             <h2><b>Personal contributions</b></h2><br>
                             <UButton to="https://www.docker.com/" target="_blank" variant="link"><b>Docker</b></UButton><br>
@@ -212,10 +220,10 @@
             <Showcase :title="iwp" subtitle="Solo assignment - Specialization project (Yr 3)">
                 <template #body>
                     <div class="mb-10">
-                        <iframe class="m-auto" width="560" height="315" src="https://www.youtube.com/embed/ZRNGnJA1MY4?si=GBUXd845TliBdFGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="m-auto max-w-full" width="560" height="315" src="https://www.youtube.com/embed/ZRNGnJA1MY4?si=GBUXd845TliBdFGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <!--Text content-->
-                    <div class="flex gap-5">
+                    <div class="flex gap-5 max-md:flex-col">
                         <div class="flex-1">
                             <b>Game Overview</b>
                             <ul class="list-disc">
@@ -263,8 +271,8 @@
         <div ref="fryharderref">
              <Showcase :title="fryharders" subtitle="Group assignment - Game Console Development (Yr 3)">
                 <template #body>
-                    <div class="mb-10">
-                        <iframe class="m-auto" width="560" height="315" src="https://www.youtube.com/embed/0eb0spiTysE?si=YDvWF8lIi1bA0lWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="mb-10 max-w-full">
+                        <iframe class="m-auto max-w-full" width="560" height="315" src="https://www.youtube.com/embed/0eb0spiTysE?si=YDvWF8lIi1bA0lWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div>
                         <b>Game overview</b><br>
@@ -318,7 +326,7 @@
             <Showcase :title="mgp" subtitle="Solo assignment - Mobile Game Programming (Yr 2)">
                 <template #body>
                     <div class="mb-10">
-                        <iframe class="m-auto" width="560" height="315" src="https://www.youtube.com/embed/zLzynxyjpzo" title="MGP Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="m-auto max-w-full" width="560" height="315" src="https://www.youtube.com/embed/zLzynxyjpzo" title="MGP Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div>
                         <b>Overview</b><br>

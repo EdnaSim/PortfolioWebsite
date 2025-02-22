@@ -17,7 +17,6 @@ export default {
         'mainteal':'#03C4A1'
       },
     },
-    
   },
   plugins: [],
 }

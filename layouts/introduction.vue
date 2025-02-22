@@ -10,7 +10,7 @@
     <!--About me description-->
     <div class="p-5">
       <p class="font-bold mb-2">About me</p>
-      <p class="w-[50%]">
+      <p class="w-[50%] max-md:w-[75%]">
         Hi, I'm a Singaporean studying game development. I started this journey because of games like League of Legends and Roblox,
         as they inspired me to want to make my own games. I really like the concept of unique playable characters with diverse kits, and I hope
         to make my own LoL (but PvE) one day.
@@ -23,7 +23,7 @@
     </div>
     <hr class="mt-4 mb-4"/>
     <!--Qualifications overview-->
-    <div class="grid grid-cols-2 divide-x">
+    <div class="grid grid-cols-2 divide-x max-md:divide-x-0 max-md:grid-cols-none">
       <!--Education-->
       <div class="space-y-4 px-4 w-full">
         <p class="font-bold text-lg">Education & Qualifications</p>
@@ -45,9 +45,9 @@
         link="https://www.credly.com/badges/e0a38b25-5b30-486b-928c-8eb05e405e46/public_url"/>
       </div>
       <!--Skills/Experience-->
-      <div class="px-4">
+      <div class="px-4 max-md:mt-10">
         <p class="font-bold text-lg">Skills</p>
-        <p>Unity C#, C++, Java/Android studio, HTML & CSS (Including Vue, Nuxt, Tailwind), version control (Eg. Github)</p>
+        <p>Unity C#, C++, Java, HTML & CSS (Including Vue, Nuxt, Tailwind, NextJS), version control (Eg. Github)</p>
 
         <div class="h-10"/> <!--Space between the 2 topics-->
 
@@ -88,7 +88,7 @@
               <u>Planned tasks</u>
               <ul class="list-disc">
                 <li>Unity development</li>
-                <li>Web development</li>
+                <li>Web development (NextJS/React + TailwindCSS)</li>
                 <li>Android app development</li>
                 <li>Server/Backend development</li>
                 <li>DevOps</li>
