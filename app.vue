@@ -79,6 +79,7 @@ function ScrollToTop(){
       <br><br>
       Email <br>
       <UButton to="mailto:ednasim123@gmail.com" target="_blank" variant="link">ednasim123@gmail.com</UButton>
+
     </div>
 
     <!--Back to top btn-->
@@ -87,4 +88,6 @@ function ScrollToTop(){
   </div>
   <UModals/>
   <UNotifications/>
+
+  <p class="absolute left-2">Last updated: 27 August 2025</p>
 </template>

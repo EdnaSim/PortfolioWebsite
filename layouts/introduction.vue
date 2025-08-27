@@ -28,13 +28,24 @@
       <div class="space-y-4 px-4 w-full">
         <p class="font-bold text-lg">Education & Qualifications</p>
         
+        <EducationTextBox title="BA in Computer Science in Interactive Media and Game Development"
+        subtitle="SIT-Digipen 2025-Ongoing"
+        link="https://www.singaporetech.edu.sg/undergraduate-programmes/computer-science-interactive-media-and-game-development"
+        >
+        <template #extra>
+          </template>
+      </EducationTextBox>
         <EducationTextBox title="Diploma in Game Development and Technology" subtitle="Nanyang Polytechnic, 2022-2025"
         link="https://www.nyp.edu.sg/student/study/schools/design-media/diploma-game-development-technology">
           <template #extra>
             <ul class="list-disc">
-              <li>Director's list for Yr 2 (Sem 1 & 2) and Yr 3 Sem 1</li>
-              <li>Awaiting graduation...</li>
+              <li>Director's list for Yr 2 (Sem 1 & 2) and Yr 3 (Sem 1 & 2)</li>
+              <li>Graduated in May 2025 with a cGPA of 3.74</li>
             </ul>
+            <p>
+              When I joined this course, I had no programming experience. <br/>My first year was rough as I was still learning the ropes
+              of programming (I ended Yr 1 with a GPA of &pi;). Through hard work, I improved continuously for the rest of the course.
+            </p>
           </template>
         </EducationTextBox>
         <EducationTextBox title="Unity Certified Associate: Programmer" subtitle="Unity Technologies, 2024"
@@ -47,7 +58,7 @@
       <!--Skills/Experience-->
       <div class="px-4 max-md:mt-10">
         <p class="font-bold text-lg">Skills</p>
-        <p>Unity C#, C++, Java, HTML & CSS (Including Vue, Nuxt, Tailwind, NextJS), version control (Eg. Github)</p>
+        <p>Unity C#, C++, Java, HTML & CSS (Including Vue, Nuxt, Tailwind, NextJS), version control (Eg. Github, Bitbucket)</p>
 
         <div class="h-10"/> <!--Space between the 2 topics-->
 
@@ -76,22 +87,30 @@
           </template>
           <template #itp2>
             <div class="accordionContainer">
-              Role: Intern<br>
-              Duration: 17 Feb 2025 - TBA (Est. 6 months)
+              Role: Software Engineer Intern<br>
+              Duration: 17 Feb 2025 - 15 Aug 2025 (6 Months)
               <br><br>
               <i>
                 While awaiting further studies, I decided to return to XCLR8 for another
                 internship as I had a great time with them during my first internship programme.<br>
-                This time, I will be gaining exposure to a broader range of industry-relevant duties,
-                allowing me to deepen my knowledge and technical skills.
+                During this internship, I primarily worked on a new therapist dashboard (Web portal) developed in NextJS.
+                (Due to an NDA, I don't think I can disclose more information about the web portal).
               </i> <br><br>
-              <u>Planned tasks</u>
+              <u>Key Tasks</u>
               <ul class="list-disc">
-                <li>Unity development</li>
-                <li>Web development (NextJS/React + TailwindCSS)</li>
-                <li>Android app development</li>
-                <li>Server/Backend development</li>
-                <li>DevOps</li>
+                <li>
+                  Web development (NextJS/ReactJS + Typescript + TailwindCSS)
+                  <ul>
+                    <li>Frontend design and logic</li>
+                    <li>API calls/handling</li>
+                  </ul>
+                </li>
+                <li>Unity development
+                  <ul>
+                    <li>Created simple animations</li>
+                    <li>Programmed new features, bug fixes, etc</li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </template>
