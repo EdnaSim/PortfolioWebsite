@@ -75,10 +75,10 @@ function ScrollToTop(){
     <!--Footer: Contact-->
     <div class="w-full text-center p-3">
       LinkedIn<br>
-      <UButton to="http://www.linkedin.com/in/edna-sim-siew-yee-020901277" target="_blank" variant="link">http://www.linkedin.com/in/edna-sim-siew-yee-020901277</UButton>
+      <UButton to="http://www.linkedin.com/in/edna-sim-siew-yee-020901277" target="_blank" variant="link">http://www.linkedin.com/in/EdnaSimSiewYee</UButton>
       <br><br>
-      Email <br>
-      <UButton to="mailto:ednasim123@gmail.com" target="_blank" variant="link">ednasim123@gmail.com</UButton>
+      <!-- Email <br>
+      <UButton to="mailto:ednasim123@gmail.com" target="_blank" variant="link">ednasim123@gmail.com</UButton> -->
 
     </div>
 
@@ -89,5 +89,5 @@ function ScrollToTop(){
   <UModals/>
   <UNotifications/>
 
-  <p class="absolute left-2">Last updated: 27 August 2025</p>
+  <p class="absolute left-2">Last updated: 9 Dec 2025</p>
 </template>

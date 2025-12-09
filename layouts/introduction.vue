@@ -28,7 +28,7 @@
       <div class="space-y-4 px-4 w-full">
         <p class="font-bold text-lg">Education & Qualifications</p>
         
-        <EducationTextBox title="BA in Computer Science in Interactive Media and Game Development"
+        <EducationTextBox title="BSc(Hons) in Computer Science in Interactive Media and Game Development"
         subtitle="SIT-Digipen 2025-Ongoing"
         link="https://www.singaporetech.edu.sg/undergraduate-programmes/computer-science-interactive-media-and-game-development"
         >
