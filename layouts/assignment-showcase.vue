@@ -228,13 +228,21 @@
                             <b>Game Overview</b>
                             <ul class="list-disc">
                                 <li>Developed in Unity</li>
-                                <li>Photon PUN multiplayer</li>
-                                <li>PC only</li>
+                                <li>Photon (PUN) multiplayer</li>
+                                <li>PC</li>
                             </ul><br>
                             Team up with other players to defend the Core using
                             the power contained within Orbs (and a stick).
                             <br><br>
+
                             <b>Game objective</b>: Survive for as many waves as possible.
+                            <br><br>
+                            <i>
+                                My favourite takeaway from this project is the complexities behind an event-driven callback system
+                                meant to make the combat system extensible and modular.<br>
+                                There is a lot of room for improvement in my implementation, especially because I overused inheritance,
+                                but this project provided valuable experience as my first time trying this sort of system.
+                            </i>
                         </div>
                         <div class="flex-1">
                             <b>Core mechanics</b>

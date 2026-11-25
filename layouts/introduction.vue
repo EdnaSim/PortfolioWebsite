@@ -29,7 +29,7 @@
         <p class="font-bold text-lg">Education & Qualifications</p>
         
         <EducationTextBox title="BSc(Hons) in Computer Science in Interactive Media and Game Development"
-        subtitle="SIT-Digipen 2025-Ongoing"
+        subtitle="SIT-DigiPen 2025-Ongoing"
         link="https://www.singaporetech.edu.sg/undergraduate-programmes/computer-science-interactive-media-and-game-development"
         >
         <template #extra>
@@ -81,20 +81,19 @@
               <ul class="list-disc">
                 <li>Integrated Unity’s Addressable system into the existing project from scratch, allowing assets to be downloaded from a cloud only when needed.</li>
                 <li>Contributed to the launch of a new app version, with a myriad of new features and systems to improve the overall usability and quality of the content presented to users.</li>
-                <li>Implemented traditional Chinese localization in Unity.</li>
+                <li>Improved performance of the app by optimizing systems</li>
               </ul>
             </div>
           </template>
+          
           <template #itp2>
             <div class="accordionContainer">
               Role: Software Engineer Intern<br>
               Duration: 17 Feb 2025 - 15 Aug 2025 (6 Months)
               <br><br>
               <i>
-                While awaiting further studies, I decided to return to XCLR8 for another
-                internship as I had a great time with them during my first internship programme.<br>
-                During this internship, I primarily worked on a new therapist dashboard (Web portal) developed in NextJS.
-                (Due to an NDA, I don't think I can disclose more information about the web portal).
+                During this internship, I primarily worked on a new therapist dashboard (Web portal) developed in NextJS. <br>
+                (I'm not allowed to disclose details, sorry!).
               </i> <br><br>
               <u>Key Tasks</u>
               <ul class="list-disc">
@@ -124,10 +123,10 @@
 import EducationTextBox from '~/components/EducationTextBox.vue';
 
 const workExpAccordion = [{
-  label: "Internship Programme (Coordinated by NYP) @ XCLR8 Technologies",
+  label: "Internship Programme (Coordinated by NYP) @ Rebee Health",
   slot:'itp1'
 },{
-  label: "Internship 2 @ XCLR8 Technologies",
+  label: "Internship 2 @ Rebee Health",
   slot:'itp2'
 }]
 </script>
